@@ -67,7 +67,7 @@ while True:
     # Drawing the seconds hand
     draw_hand(middle, radius, current_time.second * 6 - 90, seconds_hand_color)
     # Drawing the hour hand
-    draw_hand(middle, hour_length, current_time.hour * 6 - 210, line_color)
+    draw_hand(middle, hour_length, current_time.hour * 6 - 180, line_color)
     # Drawing the minute hand
     draw_hand(middle, minute_length, current_time.minute * 6 - 90, line_color)
 
