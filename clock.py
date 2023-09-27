@@ -65,11 +65,11 @@ while True:
     # Drawing the segments
     draw_segmented_lines(middle, radius, 12, segment_length, line_color)
     # Drawing the seconds hand
-    draw_hand(middle, radius, current_time.second * 6 - 90, seconds_hand_color)
+    draw_hand(middle, radius, current_time.second * 360/60 - 90, seconds_hand_color)
     # Drawing the hour hand
-    draw_hand(middle, hour_length, current_time.hour * 6 - 180, line_color)
+    draw_hand(middle, hour_length, current_time.hour * 360/12 - 90, line_color)
     # Drawing the minute hand
-    draw_hand(middle, minute_length, current_time.minute * 6 - 90, line_color)
+    draw_hand(middle, minute_length, current_time.minute * 360/60 - 90, line_color)
 
     pygame.display.flip()
 
